@@ -5,20 +5,20 @@
 This project aim is to analize which features measured by doctors can be used to predict heart disease of a patient. For this I will be using dataset, containing physical measurements of patients. 
 
 Features:
-⋅⋅* age - age in years
-⋅⋅* sex - (1 = male; 0 = female)
-⋅⋅* cp - chest pain type
-⋅⋅* trestbps - resting blood pressure (in mm Hg on admission to the hospital)
-⋅⋅* chol - serum cholestoral in mg/dl
-⋅⋅* fbs - (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
-⋅⋅* restecg - resting electrocardiographic results
-⋅⋅* thalach - maximum heart rate achieved
-⋅⋅* exang - exercise induced angina (1 = yes; 0 = no)
-⋅⋅* oldpeak - ST depression induced by exercise relative to rest
-⋅⋅* slope - the slope of the peak exercise ST segment
-⋅⋅* ca - number of major vessels (0-3) colored by flourosopy
-⋅⋅* thal - 3 = normal; 6 = fixed defect; 7 = reversable defect
-⋅⋅* target - 1 or 0
+- age - age in years
+- sex - (1 = male; 0 = female)
+- cp - chest pain type
+- trestbps - resting blood pressure (in mm Hg on admission to the hospital)
+- chol - serum cholestoral in mg/dl
+- fbs - (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
+- restecg - resting electrocardiographic results
+- thalach - maximum heart rate achieved
+- exang - exercise induced angina (1 = yes; 0 = no)
+- oldpeak - ST depression induced by exercise relative to rest
+- slope - the slope of the peak exercise ST segment
+- ca - number of major vessels (0-3) colored by flourosopy
+- thal - 3 = normal; 6 = fixed defect; 7 = reversable defect
+- target - 1 or 0
 
 I will build several classification models and choose the best-performing once. As a model quality measure, I'm going to look at all the metrics, but try to maximize recall. I think in this case it is important to catch more positive cases, even if it comes at the cost of including false positives. It is better to analyze more patients and tell some of them that their diagnosis is wrong and they are healthy than to have false negatives and miss a patient with a disease. 
 For completion of this project I'm going to use data analysis toolds such as Numpy, Pandas, Matplotlib and Seaborn. For model building I will use scikit-learn package.
